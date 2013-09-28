@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button#bu").click(function(){
+   $.post("do.php",
+  {
+    name: "QQF",
+    user:$("#text_id").val()
+  },
+  function(data,status){
+	  $("p").append(data);
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+  });
+});
+</script>
+</head>
+<body>
+
+
+	<body>
+	<form method="post" action="do.php" id="register" >
+              <input type="text" placeholder="type in a name" name="user" id="text_id">
+              
+              <button type="submit" class="btn" id="sub" >submit</button>
+     </form>
+
+	<button id="bu">向页面发送 HTTP GET 请求，然后获得返回的结果</button>
+	<p>This is a paragraph.</p>
+</body>
+    <script type="text/javascript" src="js/plain.js"></script>
+	
+</html>

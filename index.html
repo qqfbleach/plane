@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+	<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	
+        <meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+        <meta charset="utf-8" />
+        <title>Fire the plane</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <!--[if IE]>
+        <script type="text/javascript" src="js/excanvas.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		
+    </head>
+    <body>
+        <div id="main">
+            <div id="modal" class="hide" >
+			<div style="text-align:center" id="register">
+              <input  type="text" placeholder="type in a name" name="user" id="text_id" style="width:200px">
+              <span id="user_exist"></span>
+              
+            </div>
+			<div style="text-align:center"><button class="btn" id="bu" >submit</button></div>
+				<table id="tbl" style="width:400px;">
+				<tr id="col">
+				<th style="text-align:left">Name</th>
+				<th style="text-align:left">Score</th>
+				<th style="text-align:left">Rank</th>
+				</tr>
+				
+				</table>
+                <div class="footerr">
+				
+                    <button id="con" style="width: 120px; height: 30px;border: #666 solid 2px;border-radius: 15px;font-size: 15px;font-weight: bold;position: absolute;bottom: 4px;left: 50%;margin-left: -60px;color: #333;cursor: pointer;">Continue</button>
+                </div>
+            </div>			
+			
+            <canvas id="game-box"></canvas>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/plane.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>
